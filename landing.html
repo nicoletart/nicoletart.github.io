@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nicole Tartakovsky's Portfolio Main Page</title>
+  </head>
+  <body>
+    <nav role = navigation class = "top-nav">
+        <ul>
+            <li nav aria-current="true"><a href="">Home</a></li>
+            <li tabIndex = "0"> <a aria-haspopup="true" aria-expanded="false">Projects</a>
+                <ul index="items" class="pulldown-menu" onfocus="show_hide()">
+                    <li >Whack-A-Mole</li>
+                    <li>Random Food Generator</li>
+                    <li tabindex="0"><a href="./pages/projects/project_3.html">CFB Calculator</a></li>
+                </ul>
+            </li>
+            <li index= "ex"><a href="https://drive.google.com/file/d/1ggHf79V9aDg46cgoAxaZSrQp1uFvlnwO/view?usp=sharing">Resume</a></li>
+            <li><a href="./pages/bio.html">About Me</a></li>
+            <li><a href="./pages/contact_me.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+      <div class="top-landing">
+        <div class="circle-container">
+          <div class="circle"></div>
+          <div id="landing-picture">
+            <img src="./imgs/bio-pic.jpg" alt="Picture of Nicole Tartakovsky">
+          </div>
+        </div>
+          <div class="welcome-container">
+            <h1>Welcome to My Portfolio!</h1>
+          </div>
+
+          <div class="welcome-container-2">
+            <h4>My name is Nicole Tartakovsky, and I am a second year student at Northwestern University.
+              I'm studying computer science with a minor in psychology.
+            </h4>
+          </div>
+        
+        
+        
+      </div>
+
+      <div class = "project-container">
+        <div class="my-projects-text-container">
+          <h2 id="my-projects-text">My Projects</h2>
+        </div>
+        <div class="project-wrapper">
+            <div class="top-left">
+                
+                    <img class= "project-art" role= "Link to Song" src="./imgs/whackamole.jpeg" alt = "Image of Whack-a-Mole Game">
+                
+                
+            </div>
+
+            <div class="standin">
+              <h3 id="standin-title">Whack-A-Mole Game</h3>
+              <p>Programming Language: C++</p>
+              <p>Type of Project: Class</p>
+            </div>
+
+            <div class="standin" id="standin-food">
+              <h3 id="standin-title">Random Food Generator</h3>
+              <p>Programming Languages: Python, Flask, <br> HTML, and CSS</p>
+              <p>Type of Project: Personal</p>
+            </div>
+            
+
+            <div class="bottom-right">
+                <img class= "project-art" src="./imgs/refridge.jpg" alt = "Image of Random Food Generator">
+                
+            </div>
+
+            <div class="bottom-left">
+              <a href="./pages/projects/project_3.html">
+                <img class= "project-art" src="./imgs/cfb.jpeg" alt = "CFB Environmental Calculator">
+              </a>
+                
+            </div>
+
+            <div class="standin">
+              <h3 id="standin-title">Chicago Furniture Bank Environmental Calculator</h3>
+              <p>Programming Languages: HTML, CSS, <br> and JavaScript</p>
+              <p>Type of Project: Club</p>
+            </div>
+            <div class="standin"></div>
+
+
+        </div>
+      </div>
+
+
+
+
+  <!---
+        <div role = "Project Slideshow" class="slideshow_container">
+            <div class="project_slide" id="ps_1">
+              <div class="slide_number">1 / 3</div>
+                <img src="./imgs/whackamole.jpeg" alt = "Image of Whack-a-Mole Game">
+            </div>
+            <div class="project_slide">
+              <div class="slide_number">2 / 3</div>
+                <img src="./imgs/refridge.jpg" alt = "Image of Random Food Generator">
+            </div>
+            <div class="project_slide">
+              <div class="slide_number">3 / 3</div>
+                <img src="./imgs/cfb.jpeg" alt = "CFB Environmental Calculator">
+            </div>
+          
+            
+            <a class="prev" onclick="goBackward()">&#10094;</a>
+            <a class="next" onclick="goForward()">&#10095;</a>
+          
+            
+            <div class="caption_container">
+              <p id="caption"></p>
+            </div>
+        -->
+
+    </main>
+    <script src="main.js"></script>
+  </body>
+  
+</html>

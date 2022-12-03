@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Nicole Tartakovsky's Portfolio Main Page</title>
+  </head>
+  <body>
+    <nav role = navigation class = "top-nav">
+        <ul>
+            <li nav aria-current=page tabIndex = 0><a href="../landing.html">Home</a></li>
+            <li tabIndex = "0"> <a aria-haspopup="true" aria-expanded="false">Projects</a>
+              <ul class="pulldown-menu">
+                <li>Whack-A-Mole</li>
+                <li>Random Food Generator</li>
+                <li><a href="./projects/project_3.html">CFB Calculator</a></li>
+            </ul>
+            </li>
+            <li><a href="https://drive.google.com/file/d/1ggHf79V9aDg46cgoAxaZSrQp1uFvlnwO/view?usp=sharing">Resume</a></li>
+            <li><a href="./bio.html">About Me</a></li>
+            <li><a href="">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h1 id="header-text">Contact Me</h1>
+        <div class="bio-information">
+         
+          <div class="computer-container">
+              <img id="computer-image" src="../imgs/pcomp.png" alt="Clipart of Gray Computer">
+              <div class="contact-me-info">
+                <a href="mailto:nikkat311@gmail.com" onFocus="emailLook(event)"><h2 id="email">Email</h2></a>
+                <a href="https://www.linkedin.com/in/nicole-tartakovsky-254b30183/"><h2 id="linkedin">LinkedIn</h2> </a>
+                <a href="https://github.com/nicoletart"><h2 id="github">Github</h2></a>
+                <p id="email-text"></p>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <h3 id = "contact-form-text">Contact Form!</h3>
+            <form 
+              name ="contact-form"
+              >
+              <label for="First name">First name:</label><br>
+              <input type="text" id="fname" name="First name" value="John" required><br>
+              <label for="Last name">Last name:</label><br>
+              <input type="text" id="lname" name="Last name" value="Doe" required><br><br>
+              
+
+              <label for="Student">Student:</label><br>
+              <select id="student" name="Student" >
+                <option value="undergrad">Undergraduate Student</option>
+                <option value="grad">Graduate Student</option>
+                <option value="doctorate">Doctorate Student</option>
+                <option value="graduated">Graduated from School</option>
+                <option value="other">Other</option>
+              </select><br><br>
+
+              <label for="Email">Email:</label><br>
+              <input type="email" name ="Email" value="johndoe@gmail.com" required /> <br><br>
+
+              <label for="Comment">Initial Comments or Concerns</label><br>
+              <textarea id="comments" name="Comment" rows="4" cols="50"></textarea><br>
+
+              <input id="submit" type="submit" name="submit" value="Submit">
+
+
+            </form> 
+          </div>
+          
+
+         
+        </div>
+      
+    </main>
+    <script src="../main.js"></script>
+  </body>
+</html>
